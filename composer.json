@@ -1,0 +1,21 @@
+{
+    "name": "aripd/survey-bundle",
+    "type": "symfony-bundle",
+    "description": "Survey Bundle",
+    "license": "MIT",
+    "keywords": ["survey"],
+    "version": "master",
+    "authors": [
+        {
+            "name": "aricem",
+            "email": "cem@aripd.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {"ARIPD\\Bundle\\SurveyBundle": ""}
+    },
+    "target-dir": "ARIPD/Bundle/SurveyBundle",
+    "require": {
+        "php": ">=5.3.3"
+    }
+}
