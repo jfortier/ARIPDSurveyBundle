@@ -18,7 +18,7 @@ class Result {
     protected $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="ARIPD\UserBundle\Entity\User", inversedBy="results")
+     * @ORM\ManyToOne(targetEntity="ARIPD\Bundle\UserBundle\Entity\User", inversedBy="results")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id", onDelete="CASCADE")
      */
     protected $user;
@@ -85,10 +85,10 @@ class Result {
     /**
      * Set user
      *
-     * @param \ARIPD\UserBundle\Entity\User $user
+     * @param \ARIPD\Bundle\UserBundle\Entity\User $user
      * @return Result
      */
-    public function setUser(\ARIPD\UserBundle\Entity\User $user = null) {
+    public function setUser(\ARIPD\Bundle\UserBundle\Entity\User $user = null) {
         $this->user = $user;
 
         return $this;
@@ -97,7 +97,7 @@ class Result {
     /**
      * Get user
      *
-     * @return \ARIPD\UserBundle\Entity\User 
+     * @return \ARIPD\Bundle\UserBundle\Entity\User 
      */
     public function getUser() {
         return $this->user;
